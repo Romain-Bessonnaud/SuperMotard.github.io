@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/stylescontact.css">
+        <link rel="stylesheet" type="text/css" href="css/stylescommun.css">
+        <meta charset="utf-8">
+	    <title>SUPERMOTARD.FR</title>
+	    <link rel="icon" type="image/png" href="./images/logopetit_liseret_blanc.png" />
+    </head>
+
+    <body id="retourhaut">
+        <header>
+            <div class="top">
+                <div class="nomdusite"><a href="./Produit.html">SUPERMOTARD.FR</a></div>
+                <div class="logo">
+                    <a href="./Produit.html"><img src="./images/LOGO_Site.png" alt="logo du site"></a>
+                </div> 
+            </div>
+            <div class="menu1">
+                <nav>
+                    <ul>
+                        <li><a href="./Produit.html"><span>Produit</span></a></li><!--
+                        --><li><a href="./Equipe.html"><span>Equipe</span></a></li><!--
+                        --><li><a href="./Presse.html"><span>Presse</span></a></li><!--
+                        --><li><a href="./Contact.html"><span>Contact</span></a></li><!--
+                        --><li><a href="./Nousrejoindre.html"><i>▼</i><span>Nous rejoindre</span></a>
+                            <div class="submenu">
+                                <div><a href="./Vendeur.html"><span>Vendeur</span></a></div>
+                                <div><a href="./Mécanicien.html"><span>Mécanicien</span></a></div>
+                                <div><a href="./Pilote.html"><span>Pilote</span></a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="burger">
+                <img src="./images/burger.png" alt="burgerMenu">
+                <div class="menu2">
+                    <nav>
+                        <ul>
+                            <li><a href="./Produit.html"><span>Produit</span></a></li><!--
+                            --><li><a href="./Equipe.html"><span>Equipe</span></a></li><!--
+                            --><li><a href="./Presse.html"><span>Presse</span></a></li><!--
+                            --><li><a href="./Contact.html"><span>Contact</span></a></li><!--
+                            --><li><a href="./Nousrejoindre.html"><i>▼</i><span>Nous rejoindre</span></a>
+                                <div class="submenu">
+                                    <div><a href="./Vendeur.html"><span>Vendeur</span></a></div>
+                                    <div><a href="./Mécanicien.html"><span>Mécanicien</span></a></div>
+                                    <div><a href="./Pilote.html"><span>Pilote</span></a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="bandeau-haut">
+                <div class="parallax3"></div>
+                <div class="titre-top">
+                    <h1>CONTACT</h1>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="contact-contenu">
+                <div class="formulaire">
+                    <form method="POST"> <!--A COMPLETER-->
+                        <fieldset>
+                            <legend> Informations personnelles </legend>
+                            <p>
+                                <label for="surname"> * Nom : </label>
+                                <input placeholder="Dujardin" id="surname" name="uname" type="text" required>
+                            </p>
+                            <p>
+                                <label for="firstname"> * Prénom : </label>
+                                <input placeholder="Jean" id="firstname" name="firstname" type="text" required>
+                            </p>
+                            <p>
+                                <label>Sexe : </label>
+                                <input id="sexem" name="sexe" type="radio">
+                                <label for="sexem">Homme</label>
+                                <input id="sexef" name="sexe" type="radio">
+                                <label for="sexef">Femme</label>
+                            </p>
+                            <p>
+                                <label for="ddn">Date de naissance : </label>
+                                <input id="ddn" name="ddn" type="date">
+                            </p>
+                            <p>
+                                <label for="email"> * Email : </label>
+                                <input id="email" name="email" type="email" placeholder="Jean.Dujardin@gmail.com" required>
+                            </p>
+                            <p>
+                                <label for="pays">Pays d'origine : </label>
+                                <select name="pays" id="pays">
+                                    <option value="amer">Amérique</option>
+                                    <option value="fran" selected>France</option>
+                                    <option value="turk">Turkménistant</option>
+                                    <option value="guin">Guinée Equatoriale</option>
+                                    <option value="dubl">Dublin</option>
+                                    <option value="naur">Nauru</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="codepostal">Code postal : </label>
+                                <input placeholder="34900" name="codepostal" id="codepostal" pattern="[0-9]{5}">
+                            </p>
+                            <p>
+                                <label> Comment nous avez vous dévouvert : </label>
+                                <br/>
+                                <br/>
+                                <input id="communicationint" name="communicationint" type="checkbox">
+                                <label for="communicationint"> Internet </label>
+                                <br/>
+                                <input id="communicationcou" name="communicationcou" type="checkbox">
+                                <label for="communicationcou"> Course </label>
+                                <br/>
+                                <input id="communicationhas" name="communicationhas" type="checkbox">
+                                <label for="communicationhas"> Par hasard </label>
+                            </p>
+                        </fieldset>
+                        <br/>
+                        <br/>
+                        <fieldset>
+                            <legend> Votre message </legend>
+                            <p>
+                                <textarea placeholder="Ecrivez votre message ici"></textarea>
+                            </p>
+                            <p>
+                                <label for="ddr">Date à laquelle vous souhaitez être recontacté : </label>
+                                <input id="ddr" name="ddr" type="date">
+                            </p>
+                        </fieldset>
+                        <h3>* obligatoires</h3>
+                        <br/>
+                        <input type="submit" value="Envoyer" class="bouton">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+            <!-- Main du Footer -->
+            <section class="footer">
+                <div class="footer-main">
+                <h2 class="footerSub">A propos</h2>
+                <ul>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./Equipe.html">Equipe</a></li>
+                    <li><a href="./Produit.html">Nos produits</a></li>
+                </ul>
+                </div>
+                <div class="footer-main">
+                <h2 class="footerSub">Nous suivre</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/user/ktm">Youtube</a><img class="yt" src="./images/YouTube_icon.png" alt="icon yt"></li>
+                    <li><a href="https://www.instagram.com/ktm_official/?hl=fr">Instagram</a><img class="insta" src="./images/Instagram-icon.png" alt="icon insta"></li>
+                    <li><a href="https://fr-fr.facebook.com/Official.KTM/">Facebook</a><img class="fb" src="./images/fb.png" alt="icon fb"></li>
+                    <li><a href="https://twitter.com/ktm_racing">Twitter</a><img class="tw" src="./images/twitter.png" alt="icon tw"></li>
+                </ul>
+                </div>
+                <div class="footer-main">
+                <h2 class="footerSub">NEWSLETTER</h2>
+                <p>SOYEZ LE PREMIER A ÊTRE INFORMÉ</p>
+    
+                <!-- EMAIL ABONNEMENT NEWSLETTER -->
+                <form>
+                    <input type="email" name="email" placeholder="Votre addresse mail">
+                    <input type="submit" value="ABONNEZ VOUS !">
+                </form>
+    
+                </div>
+            </section>
+            
+            <a href="#" class="boutonRetour">Retour en haut ▲</a>
+            <!-- Mention légal pour le Footer -->
+            <section class="footer-legal">
+                <ul class="liste-footer-legal">
+                <li><a href="">Mentions légales</a></li>
+                <li><a>|</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li>&copy; 2020 Copyright Rominou Gaby et Willou Corp.</li>
+                </ul>
+            </section>
+    
+            </footer>
+
+    </body>
+</html>

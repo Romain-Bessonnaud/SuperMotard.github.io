@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    justify-content: center; /* center*/
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.parallax5{
+    background: url('parallax5.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+.nousrejoindre-contenu{
+    width: 86.99%; /*pour faire la meme taille que les autres pages a cause du padding */
+    background-color: black;   
+    border-radius: 1.5em;
+    padding-right: 3%;
+ }
+
+h2{
+    margin-left: 3%;
+    margin-bottom: 5%;
+    color: #ff8400;
+}
+
+h3{
+    margin-left: 10px;
+}
+
+.offres{
+    font-size: 20px;
+    margin-left: 3%;
+    letter-spacing: 1px;
+}
+
+.offres p{
+    margin-left: 5%;
+}
+
+.nousrejoindre-contenu strong{
+    color: #ff8400;
+}
+
+.offres a{
+    color: #ff8400;
+}
+
+.meca {
+    border: 5px solid white;
+    border-radius: 1.5em;
+}
+
+.vend {
+    border: 3px solid white;
+    border-radius: 1.5em;
+    margin-top: 2%;
+}
+
+.pilo {
+    border: 3px solid white;
+    border-radius: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.offres a:hover{
+    color: white;
+}

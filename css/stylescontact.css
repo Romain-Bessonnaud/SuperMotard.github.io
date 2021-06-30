@@ -1,0 +1,126 @@
+.parallax3{
+    background: url('parallax3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; /*passe en dessous quand manque de place*/
+    justify-content: center; 
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+ .contact-contenu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+}
+
+.formulaire{
+    width: 100%;
+    background-color: black;
+    padding: 2%;
+    border-radius: 1.5em;
+    line-height: 180%;
+    min-width: 400px;
+}
+
+legend{
+    font-size: 40px;
+    color: #ff8400;
+}
+
+fieldset{
+    border: 5px solid white;
+    border-radius: 1.5em;
+}
+
+textarea {
+    width: 35.5%;
+    resize: vertical;
+    min-height: 80%;
+    min-width: 383px;
+}
+
+.bouton{
+    color:#ff8400;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    border: 4px solid;
+    border-color: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.bouton:hover{
+    transform: scale(1.1);
+}
+
+/* Style des radio et check box*/ 
+
+input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+
+}
+  
+input[type=checkbox] {
+    display: none;
+}
+  
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 3px solid white;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    transition: .2s;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+  
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+  
+input[type=checkbox]:checked + label:before {
+    background-color: #ff8400;
+    border-color:  #ff8400;
+    color: #fff;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #ff8400;
+    content: '';
+    display: inline-block; 
+    border: 2px solid white;
+}

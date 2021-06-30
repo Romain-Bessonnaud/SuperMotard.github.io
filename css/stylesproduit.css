@@ -1,0 +1,123 @@
+main{
+    display: flex;
+    flex-wrap: wrap; /*passe en dessous quand manque de place*/
+    justify-content: space-around; /* espace centre et sur les cote*/
+    align-items: flex-start;
+    position: relative;
+}
+
+.parallax1{
+    background: url('parallax.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+.produit-contenu{
+ /*a mettre a gauche*/
+    flex-basis: 40%;
+    min-width: 440px;
+}
+
+.produit-side{
+/*a mettre a droite*/
+   flex-basis: 45%;
+    
+}
+
+main h2{
+    padding: 10px 10px;
+}
+
+.presentation p{  /*contient le texte*/   
+    width: 100%;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.presentation cite{
+    color: #ff8400;
+    font-size: 25px;
+}
+
+.tableau-caracteristiques{
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    color: white;
+    letter-spacing: 2px;
+}
+
+th{
+    height: 80px;
+}
+
+thead {
+    background-color:black;
+    text-align: center; 
+    color: #ff8400;
+    font-size: 35px;
+    line-height: 100%;
+}
+
+tbody{
+    background-color:black;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+td:first-child span {
+	color: #ff8400;
+}
+
+.parallax2{
+    background: url('parallax2.png') no-repeat;
+    background-attachment: fixed;
+    background-position: 91% 100%;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.conseils{
+    display: flex;
+    flex-wrap: wrap; /*passe en dessous quand manque de place*/
+    justify-content:space-evenly; /* espace centre et sur les cote*/
+    align-items: flex-start;
+}
+
+.conseils h3{
+    text-align: center;
+    color: white;
+}
+
+.conseils li {
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 21px;
+}
+
+.pour{
+    width: 33%;
+    background-color: rgba(117, 255, 140, 0.452);
+    height: 265px;
+    flex-grow: 1;
+    min-width: 230px;
+}
+
+.contre{
+    width: 33%;
+    background-color: rgb(255, 75, 99, 0.452);
+    height: 265px;
+    flex-grow: 1;
+    min-width: 230px;
+}
+
+.recommendations{
+    width: 33%;
+    background-color: rgba(169, 169, 169, 0.452);
+    height: 265px;
+    flex-grow: 1;
+    min-width: 230px;
+}
