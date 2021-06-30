@@ -6,5 +6,5 @@ Lien: https://romain-bessonnaud.github.io/SuperMotard.github.io/
 <div align="center">
   <h1 align="center">SuperMotard.fr</h1>
   <img src="images/LOGO_Site.png" height="250px">
-	<img src="images/HomePageScreen.PNG">
+	<img src="images/HomePageScreen.gif">
 </div>
